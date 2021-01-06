@@ -15,14 +15,14 @@
 }
 
 #memory-board{
-    background-color: lightblue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
     width: 30rem;
     height: 30rem;
     margin: auto;
     padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    background-color: lightblue;
     border: 3px outset rgb(141, 177, 189);
 }
 
@@ -39,10 +39,10 @@
 }
 .text{
     padding: 1.5rem 0;
+    color: yellow;
     font-family: "Pokemon Solid";
     text-align: center;
     letter-spacing: 3px;
-    color: yellow;
     text-shadow: 3px 3px blue;
 }
 
@@ -58,11 +58,11 @@ h3{
 /* CARDS */
 
 .card{
+    width: 6rem; 
+    height: 6rem;
     background-image: url(https://art.pixilart.com/fe96ece7d75441e.png);
     background-size: cover;
     background-color: #3B4CCA;
-    height: 6rem;
-    width: 6rem; 
     margin: 0 auto;
     box-shadow: 2px 2px 5px black;
     cursor: pointer;
@@ -70,23 +70,25 @@ h3{
 
 .gameOverScreen{
     position: absolute;
-    height: 100%;
+    display: none;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
     margin: auto;
     top: 0;
-    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .gameOverCard {
-    background-color:red;
-    text-align: center;
-    font-family: 'VT323', monospace;
-    text-transform:uppercase;
     width: 30rem;
     padding: 2rem;
-    letter-spacing: 1px;
+    background-color: #3B4CCA;
+    color: #FFDE00;
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    text-transform:uppercase;
+    text-align: center;
+
 }
 
 
@@ -108,4 +110,17 @@ h3{
 
 button{
     margin-top: 1rem;
+    padding: 0.5rem;
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing:3px;
+    border-radius: 0.3rem;
+
+}
+
+button:hover, 
+:focus{
+    cursor: pointer;
+
 }
