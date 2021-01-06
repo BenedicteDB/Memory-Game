@@ -1,4 +1,3 @@
 # Memory Game
-A simple memory game made using Javascript
+A simple memory game made with Javascript
 
-##Demo
