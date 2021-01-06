@@ -1,3 +1,3 @@
 # Memory Game
 A simple memory game made with Javascript.
-Click to https://benedictedb.github.io/memory-game/ play!
+Click [here](https://benedictedb.github.io/memory-game/)to play!
