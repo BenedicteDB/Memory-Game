@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="container">
+        <div class="text">
+            <h1>Pokémon Memory Game</h1>
+            <h2>Can you catch them all?</h2>
+            <h3 class="moves"></h3>
+        </div>
+        
+        <div id="memory-board">
+            <!-- memory board grid goes here -->
+        </div>
+    </section>
+    <section class="gameOverScreen">
+        <div class="gameOverCard">
+            <p>Congratulations Pokémon trainer, you catched them all</p>
+            <p class="totalMoves"></p>
+            <button onclick="resetGame()">Reset</button>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

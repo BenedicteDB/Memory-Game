@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* LAYOUT */
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/originals/1c/a6/e1/1ca6e1c35e2d884230242cc0326dbf28.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#memory-board{
+    background-color: lightblue;
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    border: 3px outset rgb(141, 177, 189);
+}
+
+.image{
+    width:100%;
+    height: 100%;
+    display:none;
+}
+
+/* FONT */
+@font-face{
+    font-family: "Pokemon Solid";
+    src: url(Pokemon\ Solid.ttf)
+}
+.text{
+    padding: 1.5rem 0;
+    font-family: "Pokemon Solid";
+    text-align: center;
+    letter-spacing: 3px;
+    color: yellow;
+    text-shadow: 3px 3px blue;
+}
+
+h1{
+   font-size: 3rem;
+}
+
+h3{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+/* CARDS */
+
+.card{
+    background-image: url(https://art.pixilart.com/fe96ece7d75441e.png);
+    background-size: cover;
+    background-color: #3B4CCA;
+    height: 6rem;
+    width: 6rem; 
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+
+.gameOverScreen{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    top: 0;
+    display: none;
+}
+
+.gameOverCard {
+    background-color:red;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    text-transform:uppercase;
+    width: 30rem;
+    padding: 2rem;
+    letter-spacing: 1px;
+}
+
+
+.showCard{
+    display: block;
+    background-color: #3B4CCA;
+    background-image: none;
+}
+
+
+.correctMatch{
+    display: block;
+    background-color: #FFDE00;
+}
+
+.noMouseEvent{
+    pointer-events: none;
+}
+
+button{
+    margin-top: 1rem;
+}
